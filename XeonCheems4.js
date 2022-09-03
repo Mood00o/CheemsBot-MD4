@@ -9272,7 +9272,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 ✈ : ${os.platform()}
 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 🙋‍ : ${Object.keys(global.db.data.users).length}
 `
-                    buttonText: "𝙈𝙀𝙉𝙐",
+                    buttonText: `𝙈𝙀𝙉𝙐`,
                     footerText: `${global.botname}`,
                     listType: "Menu",
                     sections: [{
