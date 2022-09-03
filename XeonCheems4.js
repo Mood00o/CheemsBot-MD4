@@ -9262,15 +9262,23 @@ if (isBanChat) return reply(mess.banChat)
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-title: `𝗦𝗽𝗲𝗲𝗱 🥏 : ${latensie.toFixed(4)} miliseconds`
-title: `𝗥𝘂𝗻𝘁𝗶𝗺𝗲 🕛 : ${runtime(process.uptime())}`
-title: `𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 📖 : ${global.botname}`
-title: `𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 👨‍💻 : ${global.ownername}`
-title: `𝗢𝘄𝗻𝗲𝗿 𝗡𝗼.👨‍💻 : ${global.owner}`
-title: `𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 🏙 : ${os.hostname()}`
-title: `𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 ✈ : ${os.platform()}`
-title: `𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 🙋‍ : ${Object.keys(global.db.data.users).length}`
-,
+                    title: `
+𝗦𝗽𝗲𝗲𝗱 🥏 : ${latensie.toFixed(4)} miliseconds
+
+𝗥𝘂𝗻𝘁𝗶𝗺𝗲 🕛 : ${runtime(process.uptime())}
+
+𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 📖 : ${global.botname}
+
+𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 👨‍💻 : ${global.ownername}
+
+𝗢𝘄𝗻𝗲𝗿 𝗡𝗼.👨‍💻 : ${global.owner}
+
+𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 🏙 : ${os.hostname()}
+
+𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 ✈ : ${os.platform()}
+
+𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 🙋‍ : ${Object.keys(global.db.data.users).length}
+`,
                     buttonText: "𝙈𝙀𝙉𝙐",
                     footerText: `${global.botname}`,
                     listType: "Menu",
