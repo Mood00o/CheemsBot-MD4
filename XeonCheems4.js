@@ -9252,7 +9252,7 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 
 		    var button = [{ buttonId: `${prefix}menu`, buttonText: { displayText: `MENU` }, type: 1 }]              
-            XeonBotInc.sendMessage(caption: `💗💗💝💕❣💔💔💔💞💖💥`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: `${botname}`, mentions: [m.sender] )
+            XeonBotInc.sendMessage(caption: `💗💗💝💕❣💔💔💔💞💖💥`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: `${botname}`)
 		}		
             
             break
