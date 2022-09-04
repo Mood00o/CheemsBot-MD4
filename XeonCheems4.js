@@ -9156,6 +9156,46 @@ XeonBotInc.sendMessage(users, {text: ss6, mentions:[m.sender]}, {quoted:m})
 XeonBotInc.sendMessage(m.chat, {text: tekss1, mentions:[m.sender]}, {quoted:m})
 	break
 		
+		  case 'menu3': {
+            	if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            
+                let sections = [{
+								"title": "𝙈𝙊𝙊𝘿 𝘽𝙤𝙩 𝘼𝙡𝙡 𝙁𝙚𝙖𝙩𝙪𝙧𝙚𝙨",
+								"rows": [
+									{
+										"title": "𝘼𝙇𝙇 𝙈𝙀𝙉𝙐",
+										"rowId": `${prefix}allmenu`
+									},
+									{
+										"title": "𝙎𝙋𝙀𝙀𝘿 𝙏𝙀𝙎𝙏",
+										"rowId": `${prefix}speedtest`
+									},
+									{
+										"title": "𝙋𝙄𝙉𝙂",
+										"rowId": `${prefix}ping`
+									},
+									{
+										"title": "𝙋𝙍𝙊𝙁𝙄𝙇𝙀",
+										"rowId": `${prefix}profile`
+									},
+									{
+										"title": "𝙄𝙉𝙁𝙊",
+										"rowId": `${prefix}info`
+									},
+									{
+										"title": "𝙊𝙒𝙉𝙀𝙍",
+										"rowId": `${prefix}creator`
+									}
+									
+								]
+							}
+						]
+                XeonBotInc.sendListMsg(m.chat, `𝗦𝗽𝗲𝗲𝗱 🥏 : ${latensie.toFixed(4)} miliseconds`, `𝗥𝘂𝗻𝘁𝗶𝗺𝗲 🕛 : ${runtime(process.uptime())}`, `𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 📖 : ${global.botname}`, `𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 👨‍💻 : ${global.ownername}`, `𝗢𝘄𝗻𝗲𝗿 𝗡𝗼.👨‍💻 : ${global.owner}`, `𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 🏙 : ${os.hostname()}`, `𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 ✈ : ${os.platform()}`, `𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 🙋‍ : ${Object.keys(global.db.data.users).length}`,XeonBotInc.user.name, `𝙈𝙀𝙉𝙐`, sections, m)
+                }
+            }
+            break
+			
 
 	  case 'db': {
 	   if (isBan) return reply(mess.ban)
