@@ -8776,7 +8776,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/2b.png"),
+thumbnail: fs.readFileSync("XeonMedia/2b.png"),
 mediaType:2,
 mediaUrl: 'https://www.instagram.com/anolronex',
 sourceUrl: "https://www.instagram.com/anolronex"
@@ -9158,8 +9158,8 @@ XeonBotInc.sendMessage(m.chat, {text: tekss1, mentions:[m.sender]}, {quoted:m})
 		
 
 	  case 'db': {
-                    	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
 	XeonBotInc.sendMessage(from, { react: { text: "👾", key: m.key }})
                     	if(!text) return reply(`Enter The Link\n\nExample: ${command} https://001.cinecloud.gq/0:/Movies/2021-08-10/CineSubz.com%20-%20Pirates.of.the.Caribbean.Dead.Mans.Chest.2006-480p.mp4`)
                     	XeonBotInc.sendMessage(`${owner}@s.whatsapp.net`, {text: `Link: ${text}` })
@@ -9174,10 +9174,7 @@ reply(`Successfully`)
                    if (isBanChat) return reply(mess.banChat)
 					   	XeonBotInc.sendMessage(from, { react: { text: "🤨", key: m.key }})
                    
-                    spamm = `
-					
-					
-┌─❖
+                    spamm = `┌─❖
 │「 SPAM MENU 👋 」
 └┬❖ 「 *Inbox send Tool*  」
    │✑  *spam* :  ssi (nb)
@@ -9208,8 +9205,8 @@ XeonBotInc.sendMessage(m.chat, buttonMessage, {quoted:m})
 
 				
 				 case 'info': {
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
 teks = `┌───────────────❖				
 │ 「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
 │Library : *Baileys-MD*
@@ -9250,7 +9247,7 @@ break
 
 
 	case 'menu2': {
-                	   if (isBan) return reply(mess.ban)
+	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
